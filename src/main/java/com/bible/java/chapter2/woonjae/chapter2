@@ -33,15 +33,30 @@
 	참조형(Reference type)
 	- 나머지 타입 (클래스들)
 	- new 연산으로 대입 -> 주소값으로 반영 
-	********* 기본적으로 참조타입이 매개변수로 넘어가면 call by refer
+	********* 기본적으로 참조타입이 매개변수로 넘어가면 call by refer**********
 	
-	CHAR VS INT 
+	CHAR VS 정수형 데이터 
 	
 	char는 내부적으로 유니코드로 사용 하여 2byte 
 	(only for java, 다른곳은 모르겠지만 C의 경우 1byte & ASCII)
 	
+	short 의 경우 2byte 표현 2^16 이지만 -> 최좌측 비트가 음수 비트 , -2^15 ~ 2^15
+	char 의 경우 2byte 표현  : 음수 표현 x 2^16 단위 까지 가능
+	
+	int a = '65';
+	char ch = (char) a;
+	
+	---------------------------
+	
+	a = 65 // \u0041 -> 16진수로 65
+	ch = A
+	
+	
 	
 	유니코드 VS 아스키
-	 
 	
+	
+	
+	 
+	CALL BY REFER VS CALL BY VALUE
 
