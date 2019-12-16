@@ -9,8 +9,6 @@
 	  (System.gc() , Runtime.gc()를 통해서 GC를 요청할 수 는 있으나, GC를 보장하지 않음. ) 
 
 
-
-
 	GC 메모리구조
 
 	young,old generation area
