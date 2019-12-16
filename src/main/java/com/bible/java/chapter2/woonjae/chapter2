@@ -1,0 +1,47 @@
+###Chpater 2
+
+##변수 - Variable
+
+		int 	aa	 		= 				10				;
+		타입	변수명		대입연산		초기화값		문장의끝
+		
+		ex1)
+		int  aa ; 
+		aa = 10;
+		
+		ex2)
+		int aa = 10;
+		
+		ex1 ex2 는 결과적으로 같은 행동
+		
+		지역변수의 경우 사용되기 이전에 초기화가 반드시 필요함.
+		멤버, 클래스 변수 의 경우 원시타입들은 정해진 값으로 강제 초기화됨
+		
+		int 의 경우 0 ;
+		char 의 경우 '' ;  // 공란
+		.. .
+
+
+##변수의 타입
+	원시타입 (Primitive type) 
+	8가지 기본형 
+		정수형 byte short int long 
+		실수형 float double
+		문자형 char
+		논리형 boolean
+		
+	참조형(Reference type)
+	- 나머지 타입 (클래스들)
+	- new 연산으로 대입 -> 주소값으로 반영 
+	********* 기본적으로 참조타입이 매개변수로 넘어가면 call by refer
+	
+	CHAR VS INT 
+	
+	char는 내부적으로 유니코드로 사용 하여 2byte 
+	(only for java, 다른곳은 모르겠지만 C의 경우 1byte & ASCII)
+	
+	
+	유니코드 VS 아스키
+	 
+	
+
