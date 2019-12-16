@@ -1,0 +1,65 @@
+# GC Garbage Collection
+
+	기본내용
+	
+	1. 객체가 Live Tread나 static 참조에 의해 접근할 수 없게되면, 가비지 컬렉션(이하 GC) 대상이됨.
+	2. GC는 Garbage Collector라고 불리는 데몬쓰레드에 의해 수행됨.
+	3. 객체가 메모리에서 해제되기 이전에, Garbage Collector는 해당 객체의 finalize() 메소드를 호출.
+	4. GC는 강제 할 수 없음. JVM이 객체를 저장하는 힙 여유공간을 판단하여, GC가 필요하다 판단될 때 실행.
+	  (System.gc() , Runtime.gc()를 통해서 GC를 요청할 수 는 있으나, GC를 보장하지 않음. ) 
+
+
+
+
+	GC 메모리구조
+
+	young,old generation area
+
+	대부분의 객체는 새로 생성되면, 금방 unreachable 상태가 된다. 
+	이때 생성된 대부분의 객체들은 young generation area(이하 young area)에 담기고, 
+	unreachable 상태의 객체들이 Minor GC에 의해 사라진다.
+	young area​에서 살아남은 객체들은, old generatoin area(이하 old area) 로 옮겨지게 된다.
+
+	대부분 old area는 young area보다 큰 메모리 영역을 가지도록 유도하며, 
+	크기가 큰만큼, 해당영역의 GC는 더 적게 일어나며, Full GC(or Major GC)라 칭한다.
+
+
+	PERM AREA
+	​method area라고도 칭하는 이곳은, 클래스 정보나, 문자열 등을 저장하고, 'GC의 대상이 아님' ( 인줄알았으나 ). 
+	(간혹 GC가 일어나며, 이 곳에서 일어난 GC도 Major GC count에 포함됨)
+
+	OLD AREA GC
+		OLD AREA 영역의 GC는 old 영역이 가득 차면 실행된다.
+		 -> MAJOR GC (FULL GC)
+
+
+	*****GC의 방식마다 처리 절차가 다름.
+
+
+		Serial GC
+			old 영역 GC 
+			- mark-sweep-compact 알고리즘 : 
+				mark - 영역에서 살아남은 객체를 식별(mark)
+				sweep - 식별한 객체들만 남김 (sweep)
+				compack - 각 객체들이 연속되게 쌓이도록 힙의 앞부분 부터 쌓음(compact)
+
+		Parallel GC
+			minor GC를 실행하는 쓰레드가 여러개
+			major GC는 싱글
+
+		Parallel Old GC
+			Parallel GC와 차이 :  Old 영역의 GC가 다름.
+			- mark-summary-compaction 알고리즘 사용.
+				sweep 부분에서 summary 알고리즘으로 교체. 
+			-> sweap의 싱글스레드를 이용
+			-> summary : 메모리를 인덱싱하는 단계
+ 			멀티스레드 이용 & 이전 compaction 정보를 이용
+
+		Concurrent Mark & Sweep GC (CMS GC)
+			​Serial, Parallel와는 다른 알고리즘.
+			STOP-THE-WORLD의 시간이 짦음.
+			다른 GC에 비해 많은 메모리, CPU 사용.
+			
+			** compaction 이 일어나지 않아 메모리 파편화 발생 할 수 있음.
+			
+		G1(Garbage First) GC
