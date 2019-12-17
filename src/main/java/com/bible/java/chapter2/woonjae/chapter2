@@ -57,4 +57,35 @@
 	
 	 
 	CALL BY REFER VS CALL BY VALUE
+	**** C 의 경우 포인터 연산으로 변수가 어떤 타입 변수던지 간
+	CALL BY REFER, CALL BY VALUE를 고를수있엇는뎅
+	
+	java에서는 포인터 연산이 없으므로, 
+		primitive 타입은 CALL BY VALUE
+	 	refer타입은 CALL BY REFER
+	
+	
+	value -> 말그대로 값만 넘김. 
+	
+	int a = 0;
+	math( a ); 
+	sysout( a );  // 0 
+	
+	math ( a ) { // 복사된 값
+		a+1; // 1
+	}
+	
+	refer -> 참조된 아이를 넘김 (변경시 주체가 변함)
+	
+	svo = new Svo();
+	svo.a = 1;
+	math( svo );
+
+	math ( svo ) { 
+		svo.a = svo.a+1; 
+	}
+		
+	
+	
+	
 
