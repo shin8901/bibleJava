@@ -52,10 +52,51 @@
 	ch = A
 	
 	
+	## 예약어
+	
+	알만한것들 제외하고, 익숙치 않은것들.
+	
+	volatile 
+		- Main memory 에 저장
+		- 최신값을 보장( ??? )
+		- Main memory 에서 꺼내오는 것이, CPU cache(?) 보다 오래걸리기 때문에 , 잘써야됨 (비용이 높은, 예약어) .
+	transient	
+		- serialize 시 제외
+		
+	strictfp
+	 - 각 플랫폼 (32비트 , 64비트 .. 프로세서 환경 프로세서) 에서 부동 소수점 계산을 제한함. 동일한 결과를 보장함.
+	 참고 URL - https://www.geeksforgeeks.org/strictfp-keyword-java/
+	 EX)))) 
+	 strictfp 클래스 테스트
+	{   
+	    // 여기에 모든 구체적인 방법은
+	    // 암시 적으로 엄격합니다.    
+	}
+	strictfp 인터페이스 테스트
+	{   
+	    // 여기의 모든 메소드는 암시 적으로됩니다. 
+	    // 상속 중에 사용될 때 strictfp.    
+	}
+	클래스 자동차
+	{  
+	    // 구체적인 방법에 적용된 strictfp 
+	    strictfp void calculateSpeed ​​() {}
+	}  
+	
+	native
+	
+	JNI 라이브러리 관련.
+	java로 짜여있지 않은 형태의 다른 소스를 호출 ? 아니면 C 호출 ? ( 예제는 C 던데, 다른거도?)
+	http://www.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS7594177092
+	
+	
+	
+	
 	유니코드 VS 아스키
 	
 	
 	 
+	
 	CALL BY REFER VS CALL BY VALUE
 	**** C 의 경우 포인터 연산으로 변수가 어떤 타입 변수던지 간
 	CALL BY REFER, CALL BY VALUE를 고를수있엇는뎅
