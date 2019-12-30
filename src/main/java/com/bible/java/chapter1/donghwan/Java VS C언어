@@ -1,0 +1,43 @@
+자바, C언어
+
+함수 호출 방식
+#CallByValue(값에 의한 호출)
+-특징
+ 데이터(값)을 복사해서 함수로 전달하기 때문에 원본의 데이터(값)가 변경 될 가능성이 없지만, 인자를 넘겨줄 때 마다 메모리의 공간을 할당하기 때문에 메모리 공간을 좀 더 사용하게 된다.
+ 
+ 
+ int add(int a, int b) 
+{
+    return a + b;
+}
+
+int a1 = 10;
+int a2 = 20;
+cout << add(a1, a2) << endl;
+
+-> 일반적인 함수 호출형태(값을 복사하여 전달)
+
+
+#CallByReference(참조에 의한 호출)
+-특징
+메모리 공간 할당의 문제를 벗어나게 되었지만 대신에 원본의 데이터(값)를 훼손할 수 있다는 문제점이 있다.
+
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int a1 = 10;
+int a2 = 20;
+swap(&a1, &a2);
+cout << "a1: " << a1 << " a2: " << a2 << endl;
+
+
+===> Java는 CallByValue? CallByReference?
+
+#참고
+https://luckyyowu.tistory.com/9
+http://wonwoo.ml/index.php/post/1679
+https://re-build.tistory.com/3
