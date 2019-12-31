@@ -19,6 +19,7 @@
  7. 멀티쓰레드(Multi-Thread)
   - 라이브러리(API) 제공으로 쉽게 개발 가능
   - 멀티 쓰래드에 대한 스케줄링을 자바 인터프리터가 담당
-  
+  - 자바 인프리터(JIT - Just In Time) : 실행하는 시점에 기계어로 번역하는 컴파일 기법( https://medium.com/@ahn428/java-jit-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC-c7d068e29f45 )
+   
  8. 동적 로딩(Dynamic Loading)
   - 필요한 클래스만 로딩하여 사용
