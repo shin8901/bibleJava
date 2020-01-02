@@ -98,6 +98,8 @@ public class Operator {
 		System.out.println('a'); //대소문자간 코드값 차이는 32
 		System.out.println((char)('a'-32));
 		
+		System.out.println(6 << 35); //35-32 =3  => 6*2^3 
+		
 	}
 }
 //참고 
