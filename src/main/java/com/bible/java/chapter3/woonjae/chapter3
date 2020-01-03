@@ -103,8 +103,11 @@
 		 
 		 (Integer) null -> 됨.
 		 
- == 과 ===의 차이
- 
+		 
+		 javascript
+		 
+		 == 과 ===의 차이
+	 
 		stricts 한 이퀄
 		그렇지 않은 것..
 		

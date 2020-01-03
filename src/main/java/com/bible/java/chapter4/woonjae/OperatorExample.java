@@ -1,4 +1,4 @@
-package com.bible.java.chapter3.woonjae;
+package com.bible.java.chapter4.woonjae;
 
 /**
  * <pre>

@@ -10,6 +10,7 @@
 
 
 	GC 메모리구조
+	
 
 	young,old generation area
 
@@ -20,7 +21,6 @@
 
 	대부분 old area는 young area보다 큰 메모리 영역을 가지도록 유도하며, 
 	크기가 큰만큼, 해당영역의 GC는 더 적게 일어나며, Full GC(or Major GC)라 칭한다.
-
 
 	PERM AREA
 	​method area라고도 칭하는 이곳은, 클래스 정보나, 문자열 등을 저장하고, 'GC의 대상이 아님' ( 인줄알았으나 ). 

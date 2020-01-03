@@ -8,13 +8,13 @@ public class CompareSpeed {
 		long start = System.currentTimeMillis();
 		for(int i=0; i<1000000000; i++) {
 			
-			if(a == 2) {
-				b = 2;
-			}
-			else {
-				b = 0;
-			}
-			//b = a == 2 ? 3 : 0;
+//			if(a == 2) {
+//				b = 2;
+//			}
+//			else {
+//				b = 0;
+//			}
+			b = a == 2 ? 3 : 0;
 		}
 		long end = System.currentTimeMillis();
 		System.out.println(start);

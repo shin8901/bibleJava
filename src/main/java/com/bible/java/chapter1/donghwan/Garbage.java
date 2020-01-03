@@ -3,8 +3,9 @@ package com.bible.java.chapter1.donghwan;
 public class Garbage {
 	public static void main(String args[]) {
 		String[] array = new String[3];
-		 
-		array[0] = "0";
+		
+		
+		array[0] = "0";// 상수 선언
 		array[1] = "10";
 		array[2] = "20";
 		 

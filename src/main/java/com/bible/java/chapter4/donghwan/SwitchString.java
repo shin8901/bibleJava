@@ -5,7 +5,7 @@ public class SwitchString {
 
 	public static void main(String[] args) {
 		String[] vegetables = {"감자","당근","호박","고기"};
-		
+		String dd = "2222";
 		String a = vegetables[0];
 		switch(a) {
 			case "감자":
@@ -17,6 +17,7 @@ public class SwitchString {
 			case "호박":
 				System.out.println("Pumpkin");
 				break;		
+				
 			default:
 				System.out.println("I like meat");
 		}

@@ -8,6 +8,7 @@ switch-case문 문자열비교는 java 7이후부터 가능하다
 
 
 for문은 반복횟수를 알때
+
 while문은 조건에 따른 반복만이 필요한 경우에 사용
 do-while문
 

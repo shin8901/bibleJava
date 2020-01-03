@@ -13,6 +13,7 @@ public class Operator {
 		print2(i);
 		print2(i<<2);
 		print2(i>>2);
+		
 	}
 	
 	public static void print( int i ){
