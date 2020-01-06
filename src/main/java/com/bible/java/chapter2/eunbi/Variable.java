@@ -22,6 +22,8 @@ public class Variable {
 		dd.iv = 2;
 		
 		
+		
+		
 		int num = 5; // 지역변수
 
 		// DVO 담긴 변수
