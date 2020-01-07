@@ -22,6 +22,16 @@ public class ReferenceReturnEx {
 		staticClass.step3();
 		
 		
+		
+		
+		defaultClass dc = new defaultClass();
+		dc.age = 1;
+		dc.color = "RED";
+
+		defaultClass dc2 = new defaultClass(2, "PINK");
+		
+		System.out.println(dc.age + "__" +dc.color);
+		System.out.println(dc2.age + "__" +dc2.color);
 //		
 //		staticClass.copy(d);
 //		
