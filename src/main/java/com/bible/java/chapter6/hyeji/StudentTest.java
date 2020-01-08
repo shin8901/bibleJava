@@ -31,7 +31,5 @@ public class StudentTest {
 		
 		stdPark.showStudentInfo();
 		stdPark2.showStudentInfo();
-
 	}
-
 }
