@@ -1,0 +1,30 @@
+1. 코드 재사용성
+
+2. 코드의 관리가 용이
+
+3. 신뢰성이 높은 프로그래밍을 가능하게 함
+-제어자와 메서드를 이용하여 데이터를 보호, 코드 중복 제거
+
+클래스
+정의 - 객체를 정의
+용도 - 객체를 생성
+
+##객체는 메모리에 생성된 것!
+
+객체와 인스턴스
+      인스턴스화
+클래스  ---> 객체(인스턴스)
+
+
+JVM은 할당받은 메모리를 5공간으로 나누어 관리
+
+Class Area=Method Area=Static Area
+Stack Area
+Heap Area
+(Native Method Stack Area)
+(PC Register)
+
+
+#참고
+new연산자
+https://m.blog.naver.com/PostView.nhn?blogId=heartflow89&logNo=220955262405&proxyReferer=https%3A%2F%2Fwww.google.com%2F
