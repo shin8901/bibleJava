@@ -33,6 +33,7 @@ static멤버들은 인스턴스멤버들을 참조할 수 없다.
 메모리구조
 https://jeong-pro.tistory.com/m/148
 https://siyoon210.tistory.com/124
+https://sleepyeyes.tistory.com/1
 클래스메소드 인스턴스메소드
 https://88240.tistory.com/440
 생성자 this
@@ -40,3 +41,9 @@ https://sfeg.tistory.com/m/106
 
 final static
 https://djkeh.github.io/articles/Why-should-final-member-variables-be-conventionally-static-in-Java-kor/
+
+String immutable
+https://dololak.tistory.com/699
+https://gbsb.tistory.com/255
+https://tomining.tistory.com/195
+http://wonwoo.ml/index.php/post/1173
