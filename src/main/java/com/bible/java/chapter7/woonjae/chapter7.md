@@ -63,7 +63,8 @@
 1.3 Object 클래스 ** 뭔데 넌 맨위에 있냐
 *** 다형성가서 봅시다 ***
 
-1.4 오버라이딩 - 수퍼가 가지는 메소드, 재정의
+**2 . 오버라이딩** 
+- 수퍼가 가지는 메소드, 재정의
 
 조건 1 ** 조상클래스보다 좁은 범위로 접근제어자를 재정의할수없음
 public -> 무줘권 public
@@ -100,22 +101,46 @@ protected -> public, protected
 >> **정리**
 >> 접근제어자는 좁지않게, 예외처리 같거나 더 좁게
 >> 인스턴스 메소드는 스태틱이 아니게.
-ㅓ	
 	
+2.4 super 
+>> 조상클래스의 접근예약어
+>> 현재 인스턴스의 것들과 차이를 둘때 사용
+
+```java
+	@Override
+	public void methodA() throws IOException {
+		// TODO Auto-generated method stub
+		super.methodA();
+	}
+```
+
+[super.super는 왜안될까](https://hashcode.co.kr/questions/503/%EC%9E%90%EB%B0%94%EC%97%90%EC%84%9C-%EC%99%9C-supersupermethod%EB%8A%94-%EC%95%88%EB%90%98%EB%8A%94%EA%B1%B0%EC%A3%A0 "super") 
+
+[같은내용_stackoverflow](https://stackoverflow.com/questions/586363/why-is-super-super-method-not-allowed-in-java,"stackoverflow")
+
+
+**3. 패키지...? 임포트..?**
+
+**package 는 계층구조로 구조화 시킬수있고, 실제로는 디렉토리다.**
+**클래스는 하나의 패키지에만 속해야하고 다른패키지의 동일 클래스명을 가지면 다른 클래스다**
+
+import는 패키지 명없이 클래스를 사용할 수 있게 도와준다.
+static import -> chapter2 woonjae.StaticExample
+
+
+package
+import
+class 선언
+
+
+ 
+
+
+
+
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-2 . 캡슐화
+**2 . 캡슐화**
+
 	- 
 	- 
 
