@@ -12,6 +12,11 @@ public class InnerClass {
 }
 
 class InnerClassTest {
+	{
+		class InitClass{}
+		
+		InitClass dd = new InitClass();
+	}
 	class BInnerClass {
 
 	}
@@ -19,8 +24,14 @@ class InnerClassTest {
 	static class SInnerClass {
 
 	}
+	
+	final class FInnerClass {
+
+	}
 
 	void method() {
+		class InitClass{} // 위에꺼랑 다른 클래스가 됨
+		
 		BInnerClass dd = new BInnerClass();
 	}
 
