@@ -1,0 +1,2 @@
+try with resource는 다 파일쪽만..? close가 반드시 필요한 경우만 try with resource 방식으로 하는건가..?
+//https://dololak.tistory.com/67
