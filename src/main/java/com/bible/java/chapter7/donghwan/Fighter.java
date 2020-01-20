@@ -1,7 +1,5 @@
 package com.bible.java.chapter7.donghwan;
 
-import com.bible.java.chapter7.Fightable;
-
 public class Fighter implements Fightable{
 
 	@Override
