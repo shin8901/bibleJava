@@ -23,6 +23,7 @@
   - "캡슐화" -> 감춰야한다 -> 굳이 알필요도 없다
   - 하나의 소스파일(*.java)에는 public클래스가 단 하나만 존재할 수 있다. 파일이름은 같아야한다
   - default, protected  에러나는 이유??
+  - transient https://nesoy.github.io/articles/2018-06/Java-transient
 
 # 5. 다형성
   - 여러 가지 형태를 가질 수 있는 능력 [조상클래스 타입의 참조변수로 자손클래스의 인스턴스를 참조]
