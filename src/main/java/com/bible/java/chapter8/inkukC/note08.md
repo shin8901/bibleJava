@@ -19,4 +19,10 @@ try-catch
  - 일치하는 catch 블럭 내의 문장 수행 후 try-catch문을 빠져나감. 일치하는 catch블럭이 없는 경우 예외 미처리됨.
 예외 미발생인 경우
  - catch 블럭을 거치지 않고 계속 수행.
+
+finally
+ - 예외의 발생여부에 상관없이 실행되어야할 코드를 포함시킬 목적으로 사용.
+ - catch의 return을 만나도 실행됨.
  
+try-with-resources
+ - 
