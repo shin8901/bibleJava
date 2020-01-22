@@ -38,28 +38,14 @@ public class ExceptionEx {
 //			System.out.println(5);
 //		}
 //		System.out.println(6);
-//		
 //		System.out.println("-------------------------");
-		try {
-			method1();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			System.out.println("예외처리함");
-			e.printStackTrace();
-		}
-//		try {
-//			method1();
-//		} catch(Exception e) {
-//			e.printStackTrace();
-//		}
+		Exception e = new Exception("고의로 발생");
+		RuntimeException e1 = new RuntimeException("고의로 발생");
+		throw e1;
+		
+		
 		
 	}
 	
-	static void method1() throws Exception {
-		method2();
-	}
 	
-	static void method2() throws Exception {
-		throw new Exception();
-	}
 }
