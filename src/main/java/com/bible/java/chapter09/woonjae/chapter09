@@ -1,1 +1,97 @@
 chapter09
+
+lang 패키지
+
+기본이 되는 클래스들
+기본적으로 import문 없이도 제공되는 기본라이브러리 정도로 이해하면 될듯
+
+
+1. Object 
+
+지난 챕터들에서도 공부했듯, 가장 최상위 클래스
+기본적으로 Object 클래스에서 제공받는 메서드들을 통해서, 자바 객체의 표준을 제공.
+
+동치를 비교하는 equals
+동일 객체를 표현할수 있는 hashCode Object클래스에서 제공하는내용으로는 주소값을 나타냄
+	-> equals 와 짝궁 
+	-> equals 할경우 같이 오버라이드 하는경우가 많음.
+인스턴스의 정보를 문자열로 제공하는 toString
+	-> sysout 참조하는 메소드
+자신을 복사하는 clone
+	-> Object 의 clone은 멤버 변수의 값만 복사하기땜시롱,
+	-> 좀더 유연한 내용으로 사용하려면, 오버라이드
+	-> 배열이나, 뭐 리스트 같은거 등등은 딥카피 안함
+	-> 그런내용들 복사할수있도록 조치해야됨.
+
+
+2. String vs StringBuffer vs StringBuilder
+
+	문자열 삼대장
+	
+	어떤 차이가 있고 역사가 있는가 정도.
+	
+	문자열 aaa 선언 -> aaa는 리터럴 풀 ( 상수 값이 담기는 공간에 ㄱㄱ )
+	이후 동일한 문자열을 참조하는 아이들이 생기믄 리터럴 풀에 담긴 aaa를 참조함
+	
+	String a = "aaa";
+	String b = "aaa";
+	String c = "aaa";
+	
+	System.out.println(a == b);
+	System.out.println(a == c);
+	
+	true
+	true
+	
+	참조 값이 같으므로 == 동치 연산으로는 true
+	
+	new String("aaa") vs "aaa" ? 논의 해볼 내용
+	
+	intern ?
+	
+	String d = "aaa";
+	String dd = new String("aaa");
+	
+	dd.intern();
+	 
+	dd == d ????
+	
+	그냥 이정도로 알고 넘어갑시다
+	
+	
+	문자열 += 문자열 -> 상수풀에 담겼다가 끄응 느리다
+	
+	String의 값은 불변 
+	final value ..
+	연산할때마다 값이 새로 생성
+	끝나면 메모리해제
+	...
+	 
+
+	문제가 있음
+	
+	StringBuffer vs StringBuilder
+	
+	문자열 연산에 속도문제를 해결할 수 있는 두가지 방안
+	두가지의 차이는 StringBuffer 는 Thread Safe 하다는점
+	
+	멀티 스레드를 고려하지 않아도 되는경우, StringBuffer 보단 StringBuilder를 사용합시다
+	
+	javadoc 내용
+	
+	Where possible,
+	 * it is recommended that this class be used in preference to
+	 * {@code StringBuffer} as it will be faster under most implementations.
+	 
+	 가능하면, 버퍼 보단 빌더를 사용해라. 대부분의 구현하는 내용에서 빌더가 더빠름;
+	 
+ 
+	
+	
+	 
+	
+	 
+	
+	
+	
+  
