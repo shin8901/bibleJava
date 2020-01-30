@@ -30,12 +30,11 @@ Vector 와 Stack 이펙티브자바..
 
 
 이뉴머레이션 vs 이터레이터
-
 구구닥다리 vs 구닥다리
 
 
-결국 스트림으로 해결하자
+Guava,TotallyLazy,GS Collections,Bolts,op4j,lambdaj,Functional Java...
+동시성도 가지고,, 여러모로 쓸모있는 stream
 
-자바 8에서는 가능한 스트림으로 해결하도록 권고함.
+다음에 다시 만나요
 
-나머지는 은비가 
