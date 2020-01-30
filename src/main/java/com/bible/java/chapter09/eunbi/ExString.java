@@ -27,7 +27,7 @@ public class ExString {
 		Pattern p2 = Pattern.compile("(.)\\1\\1*");
 		if (p2.matcher(sp2).find()) {
 			System.out.println("동일한 문자를 3번이상 반복 할 수 없습니다.");
-			Matcher m2 = p.matcher(sp2);
+			Matcher m2 = p2.matcher(sp2);
 			if (m2.matches()) {
 				System.out.println("여기로 와야하는데 안와");
 			}
