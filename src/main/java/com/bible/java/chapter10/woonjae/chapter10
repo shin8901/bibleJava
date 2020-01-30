@@ -1,0 +1,48 @@
+chapter 10
+시간과 달력
+
+1.0 부터 제공되는 Data,Calendar
+
+구닥다리 다 뭐다 소리는 많지만, 쨋든 많이 사용하고 있으니 사용법정도만 췤췤
+
+abstract class Calendar
+
+Calendar d = new Calendar(); // x
+Calendar d = Calendar.getInstance();
+
+달력에는 종류가 여러가지.. 
+
+통용적으로 세계 표준이 그레고리력 - 흔히 알고 있는 양력 달력
+불멸기원 ?.. 이라는 뭐 태국인가에서 쓰는 달력이 있다네
+
+getInstance 정적 팩토리 메소드 패턴 기억나지? 이런거 이용해서,
+로케일을 기준으로, Calendar 다른 구현체를 나눠준다.
+
+알다시피 util.Date 는 대부분의 메소드들이 @Deprecated 어노테이션이 달려서
+지워 질수 있음을 암시하고 있음.
+
+
+joda-time 라이브러리로 대체하는 경우가 많았는데,
+결국 java8에 오면서 joda-time라이브러리를 기본라이브러리로 흡수
+
+
+
+
+
+
+
+
+
+
+Format
+
+흔히들알고있는, 데이터의 형식을 어떻게 표현할것인가 에 대한 내용들.
+
+엥간한거는 대충이라도 들어봐서 알것이고,
+
+YYYY.MM.DD hh:mm:ss 이런 등등의 형태들 Format관련한 내용들
+
+ChoiceFormat 처음 봐서 한번해봄 
+
+
+https://d2.naver.com/helloworld/645609
