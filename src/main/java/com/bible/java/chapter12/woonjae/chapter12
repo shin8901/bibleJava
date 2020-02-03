@@ -1,0 +1,78 @@
+chapter12 제네릭스
+
+	1.5 첫 도입 
+	과거 선택적으로 사용하는 경우가 많았으나,
+	현재 모르고 있으면, API 문서 자체를 읽는것도 어려움.
+	
+1.1 제네릭스의 정의
+
+	다양한 타입의 객체들을 다루는 메소드나, 컬렉션 클래스에 컴파일 시의 타입체크를 해주는 기능.
+	
+	1.타입의 안정성을 도모
+	2.타입체크와 형변환을 생략할 수 있음.
+	
+1.2 제네릭스 클래스
+
+
+public class BoxNotGenerics {
+
+	Object item;
+
+	void setItem(Object item) {
+		this.item = item;
+	}
+
+	Object getItem() {
+		return item;
+	}
+}
+
+
+-------------------------------
+
+
+public class Box<T> {
+
+	T item;
+
+	void setItem(T item) {
+		this.item = item;
+	}
+
+	T getItem() {
+		return item;
+	}
+}
+
+
+T를 타입변수라고 함.
+E,S,K,V...
+기호의 종류만 다를뿐 '임의의 참조형 타입'
+
+
+
+Box<T> 제네릭 클래스 T의 Box, T Box 정도로 읽는다
+T 타입변수, 타입매개변수
+Box 원시타입(raw type)
+
+Box<String> Box<Integer>가 서로 다른타입이라고 하는 것은 아님.
+그저 다른 타입을 대입하여 호출한것 뿐.
+
+컴파일 후에 Box<String> Box<Integer>는 원시타입인 Box 가 된다.
+
+ 
+제네릭스의 제한
+
+스태틱 멤버에는 타입변수를 사용할수 없다. 
+제네릭 배열은 생성할 수 없다. 
+new,instanceOf 연산자 사용할수없음
+(컴파일 시점에 어떤 타입인지를 알아야하는데 모름..)
+
+꼭 생성할 필요가 있을때는, Reflection api를 이용하여 생성하거나,
+Object배열을 생성해서 복사하여, T로 형변환
+ 
+
+
+
+
+
