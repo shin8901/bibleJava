@@ -1,5 +1,14 @@
 #chapter 12 연습문제 https://developer-ek.tistory.com/18
 
+#제네릭스
+ - 정의 => 클래스 내부에서 사용할 데이터 타입을 나중에 인스턴스를 생성할 때 확정하는 것을 제네릭이라 한다
+ - 타입을 제한할 수 있다(컴파일시 에러)
+ - 형변환을 줄일 수 있다
+ - 인터페이스도 가능하다. extends를 써야한다
+ - 제네릭 타입을 부모 클래스로 사용할 경우 -> 타입 파라미터는 자식 클래스에도 기술해야 한다(추가도 가능)
+   (public class ChildProduct<T,M,C> extends Product<T,M> { ... })
+   
+
 #자바 책처럼 볼수 있는 사이트
 http://tcpschool.com/java/intro
 
