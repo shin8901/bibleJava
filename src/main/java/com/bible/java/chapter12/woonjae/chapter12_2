@@ -11,3 +11,7 @@ chapter12 열거형
 System.out.println(Card.CLOVER == Card.TWO); // 이렇게 비교하면 논리적으로 맞지않음.
 		
 //System.out.println(CardEnum.Kind.CLOVER == CardEnum.Value.TWO); // 컴파일에러 빡
+
+열거 정의와 사용
+enum name {상수명,1,2,3}
+
