@@ -8,5 +8,6 @@ chapter12 열거형
 타입에 안전함 
 실제값이 같아도, 타입이 다르면 컴파일 에러 발생
 
-Card.java 상
-if(Card.CLOVER == Card.Two)
+System.out.println(Card.CLOVER == Card.TWO); // 이렇게 비교하면 논리적으로 맞지않음.
+		
+//System.out.println(CardEnum.Kind.CLOVER == CardEnum.Value.TWO); // 컴파일에러 빡
