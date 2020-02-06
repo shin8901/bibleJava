@@ -74,5 +74,18 @@ Object배열을 생성해서 복사하여, T로 형변환
 
 
 
+제한된 제네릭 클래스
+
+제네릭 표현에 특정 클래스의 자손만 지정 T extends Fruit
+& 표현을 사용해서, 클래스 Fruit 의 자손이면서 Eatable의 인터페이스도 구현해야된다면, < T extends Fruit & Eatable>
+
+
+와일드 카드
+어떤 타입도 가능
+? 만으로는 Object 와 다른게 없으므로, extends super 등으로 상한/하한 제한을 해보자
+
+제네릭 메서드
+
+
 
 
