@@ -22,6 +22,10 @@ public class Main {
 		List<OrgDvo> fctList = list.stream().filter(x -> x.getLvl() ==4).collect(Collectors.toList());
 		
 		divList.forEach((c) -> System.out.println("divCode::"+c.getOrgCode()));
+		//for-each 여러문장
+//		saveDvo.forEach(x -> 
+//		{x.setOrgAuthId(IdGenUtil.generate());
+//		 x.setUserId(BaseUtil.getUsername());});		
 		System.out.println(list.size());
 		System.out.println(divList.size());
 		System.out.println(gbmList.size());
@@ -32,6 +36,11 @@ public class Main {
 //		svo.setGbmCodeList(orgList.stream().filter(x -> (x.getLevel().compareTo(new BigDecimal(3))==0)).collect(Collectors.toList()));
 //		svo.setFctCodeList(orgList.stream().filter(x -> (x.getLevel().compareTo(new BigDecimal(4))==0)).collect(Collectors.toList()));
 		
+		
+//		saveDvo.forEach(x -> 
+//		{x.setOrgAuthId(IdGenUtil.generate());
+//		 x.setUserId(BaseUtil.getUsername());});
+//List<TbrBiKpiRptUserOrgDVO> delDvo = BaseUtil.populate(svo.getUserOrgCodeList().stream().filter(x -> x.get_status().equals("D")).collect(Collectors.toList()), TbrBiKpiRptUserOrgDVO.class);		
 		
 	}
 	
